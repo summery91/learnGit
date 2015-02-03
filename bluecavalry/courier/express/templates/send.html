@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0" name="viewport">
+    <script type="text/javascript" src="/static/js/jquery-1.8.3.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/css/send.css">
+    <title>我要寄件</title>
+</head>
+
+<body>
+    <div class="header">
+        <h3>上门取件</h3>
+    </div>
+    <div class="content">
+        <form action="" id="send_form">
+            <ul class="user_info">
+                <li>
+                    <span class="pic_name"></span>
+                    <input type="text" name="name" placeholder="请输入姓名" />
+                </li>
+                <li>
+                    <span class="pic_phone"></span>
+                    <input type="text" name="phone" placeholder="请输入电话" />
+                </li>
+                <li>
+                    <span class="pic_addr"></span>
+                    <input type="text" name="addr" placeholder="请输入取件地址" />
+                </li>
+                <li>
+                    <span class="pic_send_addr"></span>
+                    <input type="text" name="send_addr" placeholder="请输入邮寄地址" />
+                </li>
+                <li>
+                    <span class="pic_description"></span>
+                    <input type="text" name="description" placeholder="添加备注" />
+                </li>
+            </ul>
+            <div class="time">
+                <span class="time_label">取件时间</span>
+                <span class="pic_minus" id="minus_s"></span>
+                <input type="text" value="9:00" id="start" />
+                <span class="pic_plus" id="plus_s"></span>
+                <span>~</span>
+                <span class="pic_minus" id="minus_e"></span>
+                <input type="text" value="11:00" id="end" />
+                <span class="pic_plus" id="plus_e"></span>
+                <input type="hidden" id="time_hidden" value="9:00-11:00" name="time" />
+            </div>
+            <div class="add_value">
+                <div>预估寄件价格
+                    <img src="/static/images/add.png" id="toggle" />
+                </div>
+                <div class="value_area">
+                    <div class="value_trangle">
+                        <!--本Div只来实现三角形，无其他作用-->
+                        <div class="inner_trangle"></div>
+                    </div>
+                    <ul>
+                        <li>
+                            <span>快递公司</span>
+                            <select>
+                                <option value="">
+                                    申通
+                                </option>
+                                <option value="">
+                                    圆通
+                                </option>
+                                <option value="">
+                                    韵达
+                                </option>
+                                <option value="">
+                                    汇通
+                                </option>
+                                <option value="">
+                                    中通
+                                </option>
+                            </select>
+                        </li>
+                        <li>
+                            <span>收件人地址</span>
+                            <select>
+                                <option value="">
+                                    江浙沪
+                                </option>
+                                <option value="">
+                                    安徽
+                                </option>
+                                <option value="">
+                                    北京
+                                </option>
+                                <option value="">
+                                    天津
+                                </option>
+                                <option value="">
+                                    山东
+                                </option>
+                                <option value="">
+                                    河北
+                                </option>
+                                <option value="">
+                                    河南
+                                </option>
+                                <option value="">
+                                    湖南
+                                </option>
+                                <option value="">
+                                    湖北
+                                </option>
+                                <option value="">
+                                    广东
+                                </option>
+                                <option value="">
+                                    福建
+                                </option>
+                                <option value="">
+                                    江西
+                                </option>
+                                <option value="">
+                                    陕西
+                                </option>
+                                <option value="">
+                                    山西
+                                </option>
+                                <option value="">
+                                    广西
+                                </option>
+
+                            </select>
+                        </li>
+                        <li>
+                            <span>快件重量</span>
+                            <input type="text" placeholder="默认一公斤" />
+                        </li>
+                        <li>
+                            <span>价格预估</span>
+                            <input />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <input type="submit" value="立即下单" />
+        </form>
+    </div>
+    <script type="text/javascript" src="/static/js/send.js"></script>
+</body>
+
+</html>
